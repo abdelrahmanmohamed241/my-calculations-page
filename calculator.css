@@ -1,0 +1,425 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background-image: linear-gradient(to bottom right, rgb(79,51,176,1),rgb(210,53,165));
+}
+body > div.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    width:470px;
+    height: 485px;
+    margin-left: 400px;
+    margin-top: 100px;
+    margin-right: 150px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 30px #000;
+    
+}
+.container  .pl{
+    font-size: 50px;
+    padding-top: 15px;
+    background-color: white;
+    width: 405px;
+    height: 90px;
+    margin-left: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.container .day{
+    background-color:black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 445px;
+    cursor:pointer
+}
+.container .all{
+    margin-left: 15px;
+    display: grid;
+    place-content: center;
+    color:black;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    padding-bottom: 10px;
+    row-gap: 10px;
+}
+.nums1{
+    display: grid;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-end: 5;
+}
+.nums2{
+    display: grid;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 5;
+    padding-left: 10px;
+}
+.nums3{
+    display: grid;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-end: 5;
+    padding-left: 10px;
+}
+.nums4{
+    display: grid;
+    grid-column-start: 1;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    padding-left: 10px;
+    grid-column-end: 5;
+}
+.nums5{
+    display: grid;
+    grid-column-start: 1;
+    padding-left: 10px;
+    grid-row-start: 5;
+    grid-row-end: 5;
+    grid-column-end: 5;
+}
+.nums1 .c{
+    background-color: rgb(255, 172, 116);
+    display: grid;
+    width: 180px;
+    text-align: center;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    border: white;
+    grid-row-end: 1;
+    margin-left: 10px;
+    grid-column-end: 3;
+    font-size: 50px;
+    font-weight:100;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 30px;    
+}
+.nums1 .delete{
+    background-color: rgb(255, 172, 116);
+    display: grid;
+    cursor: pointer;
+    width: 70px;
+    border-radius: 50%;
+    text-align: center;
+    grid-column-start: 3;
+    grid-row-start: 4;
+    border: white;
+    grid-row-end: 1;
+    grid-column-end: 3;
+    font-size: 25px;
+    margin-left: -35px;
+    font-weight: lighter;
+    height: 60px;
+}
+.nums1 .minus{
+    background-color: rgb(255, 155, 205);
+    display: grid;
+    width: 70px;
+    border-radius: 50%;
+    text-align: center;
+    grid-column-start: 4;
+    grid-row-start: 1;
+    border: white;
+    grid-row-end: 1;
+    cursor: pointer;
+    grid-column-end: 5;
+    font-size: 25px;
+    font-weight: lighter;
+    height: 60px;
+}
+.nums2 .one{
+    background-color: rgb(135 202 241);
+    display: grid;
+    width: 70px;
+    border-radius: 50%;
+    text-align: center;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    border: white;
+    grid-row-end: 2;
+    grid-column-end: 1;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: lighter;
+    height: 60px;
+}
+.nums2 .two{
+    background-color: rgb(135 202 241);
+    display: grid;
+    width: 70px;
+    border-radius: 50%;
+    text-align: center;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    cursor: pointer;
+    border: white;
+    grid-row-end: 2;
+    grid-column-end: 3;
+    font-size: 25px;
+    font-weight: lighter;
+    height: 60px;
+}
+.nums2 .three{
+    display: grid;
+    background-color: rgb(135 202 241);
+    width: 70px;
+    border-radius: 50%;
+    text-align: center;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    border: white;
+    cursor: pointer;
+    grid-row-end: 2;
+    grid-column-end:4;
+    font-size: 25px;
+    font-weight: lighter;
+    height: 60px;
+}
+.nums2 .divide{
+    background-color: rgb(255, 155, 205);
+    display: grid;
+    width: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    grid-column-start: 4;
+    grid-row-start: 1;
+    border: white;
+    grid-row-end: 2;
+    grid-column-end: 5;
+    font-size: 25px;
+    font-weight: lighter;
+    height: 60px;
+}
+.nums3 .four{
+    background-color: rgb(135 202 241);
+    display: grid;
+    width: 70px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    border: white;
+    grid-row-end: 3;
+    grid-column-end: 1;
+    font-size: 25px;
+    font-weight: lighter;
+    height: 60px;
+}
+.nums3 .five{
+    background-color: rgb(135 202 241);
+    display: grid;
+    width: 70px;
+    border-radius: 50%;
+    text-align: center;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    border: white;
+    cursor: pointer;
+    grid-row-end: 3;
+    grid-column-end: 3;
+    font-size: 25px;
+    font-weight: lighter;
+    height: 60px;
+}
+.nums3 .six{
+    display: grid;
+    background-color: rgb(135 202 241);
+    width: 70px;
+    border-radius: 50%;
+    text-align: center;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    border: white;
+    cursor: pointer;
+    grid-row-end: 3;
+    grid-column-end:4;
+    font-size: 25px;
+    font-weight: lighter;
+    height: 60px;
+}
+.nums3 .multiply{
+    background-color: rgb(255, 155, 205);
+    display: grid;
+    width: 70px;
+    border-radius: 50%;
+    text-align: center; 
+    grid-column-start: 4;
+    grid-row-start: 2;
+    border: white;
+    cursor: pointer;
+    grid-row-end: 3;
+    grid-column-end: 5;
+    font-size: 25px;
+    font-weight: lighter;
+    height: 60px;
+}
+.nums4 .seven{
+    background-color: rgb(135 202 241);
+    display: grid;
+    width: 70px;
+    border-radius: 50%;
+    text-align: center;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    border: white;
+    grid-row-end: 3;
+    grid-column-end: 1;
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: lighter;
+    height: 60px;
+}
+.nums4 .eight{
+    background-color: rgb(135 202 241);
+    display: grid;
+    width: 70px;
+    border-radius: 50%;
+    text-align: center;
+    grid-column-start: 2;
+    grid-row-start: 3;
+    border: white;
+    grid-row-end: 4;
+    grid-column-end: 3;
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: lighter;
+    height: 60px;
+}
+.nums4 .nine{
+    display: grid;
+    background-color: rgb(135 202 241);
+    width: 70px;
+    border-radius: 50%;
+    text-align: center; 
+    grid-column-start: 3;
+    grid-row-start: 3;
+    border: white;
+    cursor: pointer;
+    grid-row-end: 4;
+    grid-column-end:4;
+    font-size: 25px;
+    font-weight: lighter;
+    height: 60px;
+}
+.nums4 .plus{
+    background-color: rgb(255, 155, 205);
+    display: grid;
+    width: 70px;
+    border-radius: 50%;
+    text-align: center;
+    grid-column-start: 4;
+    grid-row-start: 3;
+    border: white;
+    grid-row-end: 4;
+    grid-column-end: 5;
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: lighter;
+    height: 60px;
+}
+.nums5 .dot{
+    background-color: rgb(255, 155, 205);
+    display: grid;
+    width: 70px;
+    border-radius: 50%;
+    text-align: center;
+    grid-column-start: 1;
+    grid-row-start: 4;
+    border: white;
+    grid-row-end: 5;
+    grid-column-end: 1;
+    font-size: 35px;
+    font-weight: lighter;
+    padding-bottom: 16px;
+    height: 60px;
+    cursor: pointer;
+}
+.nums5 .zero{
+    background-color: rgb(135 202 241);
+    display: grid;
+    width: 70px;
+    border-radius: 50%;
+    text-align: center;
+    grid-column-start: 2;
+    grid-row-start: 4;
+    border: white;
+    grid-row-end: 5;
+    grid-column-end: 3;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: lighter;
+    height: 60px;
+}
+.nums5 .equal{
+    background-color: rgb(116, 255, 179);
+    display: grid;
+    width: 181px;
+    border-radius: 0%;
+    text-align: center;
+    grid-area: 4 / 3 / 5 / 5;
+    border: white;
+    font-size: 50px;
+    font-weight: 100;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-right: -40px;
+    height: 60px;
+}
+input.one:hover{
+    transform: scale(1.1);
+}
+input.two:hover{
+    transform: scale(1.1);
+}
+input.three:hover{
+    transform: scale(1.1);
+}
+input.four:hover{
+    transform: scale(1.1);
+}
+input.five:hover{
+    transform: scale(1.1);
+}
+input.six:hover{
+    transform: scale(1.1);
+}
+input.seven:hover{
+    transform: scale(1.1);
+}
+input.eight:hover{
+    transform: scale(1.1);
+}
+input.nine:hover{
+    transform: scale(1.1);
+}
+input.zero:hover{
+    transform: scale(1.1);
+}
+input.dot:hover{
+    transform: scale(1.1);
+}
+input.plus:hover{
+    transform: scale(1.1);
+}
+input.minus:hover{
+    transform: scale(1.1);
+}
+input.divide:hover{
+    transform: scale(1.1);
+}
+input.multiply:hover{
+    transform: scale(1.1);
+}
+input.delete:hover{
+    transform: scale(1.1);
+}
+.day:hover{
+    transform: scale(1.1);
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="calculator.css">
+         <link rel="stylesheet" href="w3schools1.css"> 
+         <link rel="stylesheet" href="css/all.min.css"> 
+         <link rel="preconnect" href="https://fonts.googleapis.com"> 
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap" rel="stylesheet"> 
+         <title>Document</title> 
+    </head>
+    <body>
+       <div class="container">
+        <button class="day">
+        </button>
+        <form>
+            <div class="playground">
+        <input type="text" class="pl" name="playground">
+    </div>    
+    
+        <div class="all">
+        <div class="nums1">
+            <input type="button" class="c" value="c"  onclick="playground.value = '' ">
+            <input type="button" class="delete" value="del"  onclick="playground.value = playground.value.toString().slice(0,-1)">
+            <input type="button" class="minus" value="-"  onclick="playground.value += '-' ">
+            </div>
+       
+            <div class="nums2">
+                <input type="button" class="one" value="1"  onclick="playground.value += '1' ">
+                <input type="button" class="two" value="2"  onclick="playground.value += '2' ">
+                <input type="button" class="three" value="3"  onclick="playground.value += '3'">
+                <input type="button" class="divide" value="/"  onclick="playground.value += '/' ">
+            </div>
+            <div class="nums3">
+                <input type="button" class="four" value="4"  onclick="playground.value += '4' ">
+                <input type="button" class="five" value="5"  onclick="playground.value += '5' ">
+                <input type="button" class="six" value="6"  onclick="playground.value += '6'">
+                <input type="button" class="multiply" value="X"  onclick="playground.value += '*' ">
+            </div>
+            <div class="nums4">
+                <input type="button" class="seven" value="7"  onclick="playground.value += '7' ">
+                <input type="button" class="eight" value="8"  onclick="playground.value += '8' ">
+                <input type="button" class="nine" value="9"  onclick="playground.value += '9'">
+                <input type="button" class="plus" value="+"  onclick="playground.value += '+' ">
+            </div>
+            <div class="nums5">
+                <input type="button" class="dot" value="."  onclick="playground.value += '.' ">
+                <input type="button" class="zero" value="0"  onclick="playground.value += '0'">
+                <input type="button" class="equal" value="="  onclick="playground.value =eval(playground.value)">
+            </div>
+        </div>
+    </form>
+       </div>
+        <script  src="calculator.js" ></script>
+        </body>
+        </html>
